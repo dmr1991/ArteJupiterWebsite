@@ -12,14 +12,14 @@ body {
   overflow-x: hidden !important;
 }
 .regular-text {
-  font-size: 1em;
+  font-size: 10rem;
   font-weight: 200;
 }
 
 .navigationSection {
   background-color: rgba(25, 17, 17, 0.204);
   display: flex;
-  height: 35px;
+  height: 4rem;
   /* border: solid 1px red; */
   padding: 0px;
   margin: 0px;
@@ -28,7 +28,7 @@ body {
 }
 
 .navlogoimg {
-  height: 25px;
+  height: 2.5rem;
   /* border: solid 1px red; */
   margin: 0px 10px;
   padding: 10px 0px 5px 0px;
@@ -36,7 +36,8 @@ body {
 
 .social-icons {
   /* border: solid 1px red; */
-  height: 18px;
+  height: 2rem;
+  padding: 2px;
 }
 
 .navbar {
@@ -48,8 +49,8 @@ body {
 
 li {
   /* border: solid 1px red; */
-  padding: 8px;
-  font-size: 12px;
+  padding: 1rem;
+  font-size: 1.4rem;
   margin: 0px 2px;
   max-width: 100%;
   color: rgb(255, 255, 255);
@@ -62,38 +63,43 @@ li:hover {
 .bannerColor {
   /* background-color: rgba(1, 61, 69, 0.803); */
   background-color: rgba(255, 191, 191, 0);
-  height: 22em;
+  height: 30rem;
   display: flex;
 }
 .bannerClear {
   /* background-color: rgba(1, 61, 69, 0.803); */
   background-color: rgba(255, 191, 191, 0);
-  height: 22em;
+  height: 28rem;
 }
 
 .bannerimage {
-  height: 20em;
+  height: 27rem;
   margin: 15px;
 }
 
 .textBubbles {
   background-color: rgba(255, 191, 191, 0.843);
-  height: 6em;
   border-radius: 10px;
   margin-left: 2em;
+  word-wrap: break-word;
 }
-.regularText {
+
+.heroBtn{
+  
+}
+.contentText {
   padding-top: 10px;
   padding-left: 2em;
   padding-right: 20px;
   color: rgb(255, 255, 255);
-  font-size: small;
+  font-size: 1.2rem;
   font-weight: 200;
 }
 
 .headerText {
-  padding-left: 30px;
-  padding-top: 30px;
+  line-height: 120%;
+  font-size: 4rem;
+  padding-left: 2rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 1px #000000bb;
@@ -109,7 +115,8 @@ li:hover {
 
 .workshopsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); */
+  grid-template-columns: repeat(3, 33.33%);
   grid-template-rows: 1fr;
   gap: 0.5em;
   padding: 10px;
