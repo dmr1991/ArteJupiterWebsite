@@ -14,17 +14,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <container class="navigationSection">
+    <nav class="navigationSection">
       <div class="logo-nav">
         <a href="google.com"
           ><img class="navlogoimg" src="images/logoblanco_clear.png" alt=""
         /></a>
       </div>
       <ul class="navbar regular-text">
-        <li>HOME</li>
-        <li>GALLERY</li>
-        <li>WORKSHOP</li>
-        <li>CONTACT</li>
+        <a class="links" href="index.html"><li>Home</li></a>
+        <a class="links" href="index.html"><li>Workshops</li></a>
+        <a class="links" href="index.html"><li>The Team</li></a>
+        <a class="links" href="index.html"><li>Gallery</li></a>
+        <a class="links" href="index.html"><li>Contact</li></a>
       </ul>
       <div class="social-nav">
         <a href="google.com"
@@ -34,50 +35,208 @@
           ><img class="social-icons" src="images/email.png" alt=""
         /></a>
       </div>
-    </container>
-    <container class="heroSection">
-      <div class="bannerColor">
-        <div>
-          <h1 class="headerText">ARTE JÚPITER</h1>
-          <div class="textBubbles">
-            <p class="contentText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-              veritatis, nam et illum iusto corporis. Sint assumenda quisquam
-              molestias odit sapiente sed recusandae debitis, enim numquam
-              minima! Iste, accusamus incidunt.
-            </p>
-          </div>
-          <a href="http://" class="heroBtn"><button>View Gallery</button></a>
-        </div>
-        <img src="images/shapebanner.png" class="bannerimage" alt="" />
+    </nav>
+    <section class="heroSection">
+      <div class="transparent">
+        <h1 class="heroText">ARTE JÚPITER</h1>
+        <p class="large-main-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+          veritatis, nam et illum iusto corporis. Sint assumenda quisquam
+          molestias odit sapiente sed recusandae debitis, enim numquam minima!
+          Iste, accusamus incidunt.
+        </p>
+        <a href="index.html"><button>Gallery</button></a>
       </div>
-    </container>
-    <container class="workshopSection">
-      <div class="bannerClear">
-        <div class="workshopsGrid">
-          <div class="boxedElement">
-            <h2 class="workshopTitles">This is workshop #1</h2>
-            <p class="workshopTextDescription">description for workshop</p>
-            <img src="images/workshop1.jpeg" class="imageIcons" alt="" />
+    </section>
+    <section class="section green">
+      <h1 class="large-text">Our Workshops</h1>
+      <p class="medium-text spacer-large">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eligendi
+        qui nemo possimus quia dicta error et, eum sunt debitis. Aliquid ratione
+        tempore laudantium repudiandae ut inventore cumque totam harum?
+      </p>
+      <div class="workshopsGrid">
+        <div class="boxedElement">
+          <h2 class="workshopTitles">This is workshop #1</h2>
+          <p class="workshopTextDescription">description for workshop</p>
+          <img src="images/workshop1.jpeg" class="workshop-images" alt="" />
+        </div>
+        <div class="boxedElement">
+          <h2 class="workshopTitles">This is workshop #2</h2>
+          <p class="workshopTextDescription">description for workshop</p>
+          <img src="images/workshop1.jpeg" class="workshop-images" alt="" />
+        </div>
+        <div class="boxedElement">
+          <h2 class="workshopTitles">This is workshop #3</h2>
+          <p class="workshopTextDescription">description for workshop</p>
+          <img src="images/workshop2.jpeg" class="workshop-images" alt="" />
+        </div>
+        <div class="boxedElement">
+          <h2 class="workshopTitles">This is workshop #4</h2>
+          <p class="workshopTextDescription">description for workshop</p>
+          <img src="images/workshop2.jpeg" class="workshop-images" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="teamSection">
+      <div class="section transparent">
+        <h1 class="large-text">The Team</h1>
+        <p class="medium-text spacer-small">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          error quo voluptatem quod exercitationem sint doloremque, consequuntur
+          molestias ducimus laborum praesentium non officiis temporibus
+          voluptatibus nam! Pariatur quam nisi voluptas.
+        </p>
+        <div class="team-flex">
+          <div class="team">
+            <div>
+              <h1 class="subtitle">Alex</h1>
+              <h2 class="medium-text team-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </h2>
+            </div>
+            <div class="circle">
+              <img src="images/team1.jpg" class="team-images" alt="" />
+            </div>
           </div>
-          <div class="boxedElement">
-            <h2 class="workshopTitles">This is workshop #2</h2>
-            <p class="workshopTextDescription">description for workshop</p>
-            <img
-              src="images/studio-maato-workshop-2022-10.jpg"
-              class="imageIcons"
+          <div class="team">
+            <div>
+              <h1 class="subtitle">Lisa</h1>
+              <h2 class="medium-text team-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </h2>
+            </div>
+            <div class="circle">
+              <img src="images/team2.jpg" class="team-images" alt="" />
+            </div>
+          </div>
+          <div class="team">
+            <div>
+              <h1 class="subtitle">Jack</h1>
+              <h2 class="medium-text team-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </h2>
+            </div>
+            <div class="circle">
+              <img src="images/team3.jpg" class="team-images" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section green">
+      <container>
+        <h1 class="large-text">Gallery</h1>
+        <p class="medium-text spacer-large">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          asperiores sunt odit explicabo accusamus, at a vel libero placeat
+          repellat quaerat, tempora nobis. Consequatur magni necessitatibus
+          nesciunt fugit pariatur dignissimos?
+        </p>
+        <div class="gallery">
+          <img class="gallery-thumbnail" src="images/gal1.jpg" alt="" />
+          <img class="gallery-thumbnail" src="images/gal2.jpg" alt="" />
+          <img class="gallery-thumbnail" src="images/gal3.jpg" alt="" />
+          <img class="gallery-thumbnail" src="images/gal4.jpg" alt="" />
+          <img class="gallery-thumbnail" src="images/gal5.jpg" alt="" />
+          <img class="gallery-thumbnail" src="images/gal6.jpg" alt="" />
+          <img class="gallery-thumbnail" src="images/gal7.jpg" alt="" />
+          <img class="gallery-thumbnail" src="images/gal8.jpg" alt="" />
+          <img class="gallery-thumbnail" src="images/gal9.jpg" alt="s" />
+        </div>
+      </container>
+    </section>
+    <section class="contactSection">
+      <div class="section transparent">
+        <h1 class="large-text">Contact Us</h1>
+        <form class="contact-form" action="">
+          <p class="medium-text spacer-small">
+            Fill in the below contact form and we will get back to you as soon
+            as possible.
+          </p>
+          <label for="name">Name</label
+          ><input type="text" id="name" class="input-size" required />
+          <label for="email">Email</label
+          ><input
+            type="email"
+            id="email"
+            class="input-size"
+            required
+            placeholder="email@domain.com"
+          />
+          <label for="telephone">Phone Number</label
+          ><input
+            type="tel"
+            id="telephone"
+            class="input-size"
+            placeholder="(XXX) XXXX-XXXX"
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="63"
+            rows="10"
+            class="input-message"
+            required
+          ></textarea>
+          <fieldset>
+            <legend>How do you prefer to be contacted?</legend>
+            <label for="radio-email"
+              ><input
+                type="radio"
+                name="contact"
+                value="email"
+                id="radio-email"
+              />Email</label
+            >
+            <label for="radio-whatsapp"
+              ><input
+                type="radio"
+                name="contact"
+                value="whatsapp"
+                id="radio-whatsapp"
+                checked
+              />Whatsapp</label
+            >
+            <label for="radio-telefono"
+              ><input
+                type="radio"
+                name="contact"
+                value="telephone"
+                id="radio-telephone"
+              />Teléfono</label
+            >
+          </fieldset>
+          <label for=""
+            ><input type="checkbox" class="checkbox" checked />Subscribe to our
+            newsletter to get updates of upcoming workshops.</label
+          >
+          <input type="submit" value="Send" class="send" />
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="section green footerBox">
+        <div class="copyright">
+          <a href="google.com"
+            ><img
+              class="footer-logo footer-element"
+              src="images/logoblanco_clear.png"
               alt=""
-            />
-          </div>
-          <div class="boxedElement">
-            <h2 class="workshopTitles">This is workshop #3</h2>
-            <p class="workshopTextDescription">description for workshop</p>
-            <img src="images/workshop2.jpeg" class="imageIcons" alt="" />
-          </div>
+          /></a>
+          <h2 class="footer-element">Copyright &copy; Arte Júpiter</h2>
         </div>
+        <ul class="footer-element mininav">
+          <a class="links" href="index.html"><li>Home</li></a>
+          <a class="links" href="index.html"><li>Workshops</li></a>
+          <a class="links" href="index.html"><li>The Team</li></a>
+          <a class="links" href="index.html"><li>Gallery</li></a>
+          <a class="links" href="index.html"><li>Contact</li></a>
+        </ul>
       </div>
-    </container>
-    <container class="gallerySection"></container>
-    <container class="footer"></container>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
