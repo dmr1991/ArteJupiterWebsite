@@ -30,7 +30,7 @@ body {
   margin: 0px 10px;
   padding: 10px 0px 5px 0px;
 }
-.links{
+.links {
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -112,7 +112,7 @@ button:hover {
   text-align: center;
   font-weight: 300;
   font-size: 4em;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 0;
   line-height: 0;
   color: rgb(255, 255, 255);
@@ -135,11 +135,16 @@ button:hover {
 }
 .section {
   height: fit-content;
+  min-height: 90vh;
+  padding: 3em 0em 4em 0em;
+}
+.footer-section {
+  height: fit-content;
   padding: 3em 0em 4em 0em;
 }
 .workshopsGrid {
   width: 94%;
-  margin: 0 auto 3em auto;
+  margin: 5em auto 3em auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5em;
@@ -189,6 +194,53 @@ button:hover {
   margin: 0px;
   padding: 0.4em;
 }
+/*POPUP FOR GRID */
+
+.popup {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 70%;
+  max-height: 80%;
+  text-align: center;
+  border-radius: 5px;
+}
+.popup-image{
+  max-width: 70%;
+  max-height: 80%;
+}
+.popup-title{
+  color: black;
+}
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*end of popup*/
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -198,7 +250,7 @@ label {
   font-family: inherit;
   color: white;
   display: block;
-  font-size: 1.3em;
+  font-size: 1em;
   margin-top: 0.5em;
   text-align: left;
 }
@@ -207,11 +259,11 @@ legend {
   font-family: inherit;
   color: white;
   display: block;
-  font-size: 1.3em;
+  font-size: 1em;
   align-self: center;
 }
 fieldset {
-  margin-top: 1.5em;
+  margin-top: 1.3em;
   border: 0;
   align-self: center;
 }
@@ -236,7 +288,7 @@ fieldset {
   align-self: center;
   font-family: inherit;
   margin: 1.5em;
-  margin-bottom:3em;
+  margin-bottom: 3em;
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -293,7 +345,7 @@ fieldset {
   box-sizing: border-box;
   transition: 300ms ease-in-out;
 }
-.team:hover{
+.team:hover {
   scale: 101%;
   background-color: #88a376;
 }
@@ -316,18 +368,17 @@ fieldset {
   object-fit: cover;
   border-radius: 50%;
 }
-.subtitle{
+.subtitle {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
-.team-text{
+.team-text {
   padding: 2em;
 }
-.footer-logo{
+.footer-logo {
   height: 5em;
   margin: 0px;
-
 }
 .footerBox {
   height: 20em;
@@ -337,22 +388,22 @@ fieldset {
   padding: 4em;
   justify-content: center;
 }
-.copyright{
+.copyright {
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.mininav{ 
+.mininav {
   margin: 0;
-  padding:0;
+  padding: 0;
   line-height: 0.7;
   width: 40%;
   font-size: 1em;
   list-style: none;
   text-align: right;
 }
-.footer-element{
+.footer-element {
   margin: 3em;
   color: white;
   font-weight: 400;

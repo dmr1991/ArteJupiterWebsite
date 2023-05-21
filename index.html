@@ -16,27 +16,27 @@
   <body>
     <nav class="navigationSection">
       <div class="logo-nav">
-        <a href="google.com"
+        <a href="index.html"
           ><img class="navlogoimg" src="images/logoblanco_clear.png" alt=""
         /></a>
       </div>
       <ul class="navbar regular-text">
         <a class="links" href="index.html"><li>Home</li></a>
-        <a class="links" href="index.html"><li>Workshops</li></a>
-        <a class="links" href="index.html"><li>The Team</li></a>
-        <a class="links" href="index.html"><li>Gallery</li></a>
-        <a class="links" href="index.html"><li>Contact</li></a>
+        <a class="links" href="#workshops"><li>Workshops</li></a>
+        <a class="links" href="#theTeam"><li>The Team</li></a>
+        <a class="links" href="#gallery"><li>Gallery</li></a>
+        <a class="links" href="#contact"><li>Contact</li></a>
       </ul>
       <div class="social-nav">
-        <a href="google.com"
+        <a href="https://instagram.com/arte.jupiter?igshid=MzRlODBiNWFlZA=="
           ><img class="social-icons" src="images/instagram.png" alt=""
         /></a>
-        <a href="google.com"
+        <a href="mailto:artejupitergt@gmail.com" target="_blank"
           ><img class="social-icons" src="images/email.png" alt=""
         /></a>
       </div>
     </nav>
-    <section class="heroSection">
+    <section class="heroSection" id="home">
       <div class="transparent">
         <h1 class="heroText">ARTE JÚPITER</h1>
         <p class="large-main-text">
@@ -45,10 +45,10 @@
           molestias odit sapiente sed recusandae debitis, enim numquam minima!
           Iste, accusamus incidunt.
         </p>
-        <a href="index.html"><button>Gallery</button></a>
+        <a class="links" href="#gallery"><button>Gallery</button></a>
       </div>
     </section>
-    <section class="section green">
+    <section class="section green" id="workshops">
       <h1 class="large-text">Our Workshops</h1>
       <p class="medium-text spacer-large">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eligendi
@@ -56,29 +56,113 @@
         tempore laudantium repudiandae ut inventore cumque totam harum?
       </p>
       <div class="workshopsGrid">
-        <div class="boxedElement">
+        <div class="boxedElement" onclick="togglePopup(this, 'popup1')">
           <h2 class="workshopTitles">This is workshop #1</h2>
           <p class="workshopTextDescription">description for workshop</p>
           <img src="images/workshop1.jpeg" class="workshop-images" alt="" />
         </div>
-        <div class="boxedElement">
+        <!--POPUP BOXED ELEMENT-->
+        <div id="popup1" class="popup" onclick="closePopup(event)">
+          <div id="popupContent1" class="popup-content">
+            <h2 id="popupTitle1" class="workshopTitles popup-title">
+              Details of workshop 1
+            </h2>
+            <p id="popupDescription1" class="workshopTextDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Excepturi, repudiandae iure eveniet quis voluptates iusto nobis!
+              Consequuntur vero illum sint et eveniet maiores delectus placeat
+              iure, sit cum tempore mollitia.
+            </p>
+            <img
+              id="popupImage1"
+              class="workshop-images popup-image"
+              alt=""
+              src="images/workshop1.jpeg"
+            />
+          </div>
+        </div>
+        <!--END OF POPUP BOXED ELEMENT-->
+        <div class="boxedElement" onclick="togglePopup(this, 'popup2')">
           <h2 class="workshopTitles">This is workshop #2</h2>
           <p class="workshopTextDescription">description for workshop</p>
           <img src="images/workshop1.jpeg" class="workshop-images" alt="" />
         </div>
-        <div class="boxedElement">
+        <!--POPUP BOXED ELEMENT-->
+        <div id="popup2" class="popup" onclick="closePopup(event)">
+          <div id="popupContent2" class="popup-content">
+            <h2 id="popupTitle2" class="workshopTitles popup-title">
+              Details of workshop 2
+            </h2>
+            <p id="popupDescription2" class="workshopTextDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Excepturi, repudiandae iure eveniet quis voluptates iusto nobis!
+              Consequuntur vero illum sint et eveniet maiores delectus placeat
+              iure, sit cum tempore mollitia.
+            </p>
+            <img
+              id="popupImage2"
+              class="workshop-images popup-image"
+              alt=""
+              src="images/workshop1.jpeg"
+            />
+          </div>
+        </div>
+        <!--END OF POPUP BOXED ELEMENT-->
+        <div class="boxedElement" onclick="togglePopup(this, 'popup3')">
           <h2 class="workshopTitles">This is workshop #3</h2>
           <p class="workshopTextDescription">description for workshop</p>
           <img src="images/workshop2.jpeg" class="workshop-images" alt="" />
         </div>
-        <div class="boxedElement">
+        <!--POPUP BOXED ELEMENT-->
+        <div id="popup3" class="popup" onclick="closePopup(event)">
+          <div id="popupContent3" class="popup-content">
+            <h2 id="popupTitle3" class="workshopTitles popup-title">
+              Details of workshop 3
+            </h2>
+            <p id="popupDescription3" class="workshopTextDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Excepturi, repudiandae iure eveniet quis voluptates iusto nobis!
+              Consequuntur vero illum sint et eveniet maiores delectus placeat
+              iure, sit cum tempore mollitia.
+            </p>
+            <img
+              id="popupImage3"
+              class="workshop-images popup-image"
+              alt=""
+              src="images/workshop1.jpeg"
+            />
+          </div>
+        </div>
+        <!--END OF POPUP BOXED ELEMENT-->
+        <div class="boxedElement" onclick="togglePopup(this, 'popup4')">
           <h2 class="workshopTitles">This is workshop #4</h2>
           <p class="workshopTextDescription">description for workshop</p>
           <img src="images/workshop2.jpeg" class="workshop-images" alt="" />
         </div>
+        <!--POPUP BOXED ELEMENT-->
+        <div id="popup4" class="popup" onclick="closePopup(event)">
+          <div id="popupContent4" class="popup-content">
+            <h2 id="popupTitle4" class="workshopTitles popup-title">
+              Details of workshop 4
+            </h2>
+            <p id="popupDescription4" class="workshopTextDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Excepturi, repudiandae iure eveniet quis voluptates iusto nobis!
+              Consequuntur vero illum sint et eveniet maiores delectus placeat
+              iure, sit cum tempore mollitia.
+            </p>
+            <img
+              id="popupImage4"
+              class="workshop-images popup-image"
+              alt=""
+              src="images/workshop1.jpeg"
+            />
+          </div>
+        </div>
+        <!--END OF POPUP BOXED ELEMENT-->
       </div>
     </section>
-    <section class="teamSection">
+    <section class="teamSection" id="theTeam">
       <div class="section transparent">
         <h1 class="large-text">The Team</h1>
         <p class="medium-text spacer-small">
@@ -124,7 +208,7 @@
         </div>
       </div>
     </section>
-    <section class="section green">
+    <section class="section green" id="gallery">
       <container>
         <h1 class="large-text">Gallery</h1>
         <p class="medium-text spacer-large">
@@ -146,7 +230,7 @@
         </div>
       </container>
     </section>
-    <section class="contactSection">
+    <section class="contactSection" id="contact">
       <div class="section transparent">
         <h1 class="large-text">Contact Us</h1>
         <form class="contact-form" action="">
@@ -218,7 +302,7 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="section green footerBox">
+      <div class="footer-section green footerBox">
         <div class="copyright">
           <a href="google.com"
             ><img
